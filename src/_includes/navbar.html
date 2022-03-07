@@ -1,0 +1,73 @@
+<header class="header">
+    <div class="header_top">
+        <div class="header_top-left">
+            <p class="header_top-left--p"><a href="tel:{{site.data.company.phones[0]}}"
+                    class="text-white"> <i class="fas fa-phone-alt"></i> {{site.data.company.phones[0]}}</a></p>
+            <p class="header_top-left--p"> Lundi au Dimanche : 7h - 21h</p>
+        </div>
+        <div class="header_top-left">
+            <p class="header_top-left--p"><i class="fas fa-map-marker-alt"></i> {{site.data.company.address}}</p>
+        </div>
+        <div class="header_top-left">
+            <p class="header_top-left--p"><a href="mailto:{{site.data.company.email}}"
+                    class="text-white"> <i class="fas fa-envelope"></i> {{site.data.company.email}}</a>
+            </p>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light Navbar">
+    <div class="navbar-brand Navbar_image">
+        <a href="{% link accueil.html %}"><img src="../assets/img/logo.png" class="Navbar_image-img" alt="logo" /></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav Navbar_nav ml-auto">
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-link" href="{% link accueil.html %}">Accueil</a>
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-link" href="{% link besson-couverture.html %}">Besson couverture</a>
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-link" href="{% link nos-services.html %}">Nos Services <i class="fas fa-angle-down"></i></a>
+                <div class="drop-down">
+                    <a class="nav-link Navbar_nav-link" href="{% link ravalement.html %}"> <span>Ravalement</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link isolation.html %}"><span>Isolation</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link traitement.html %}"><span>Traitement</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link couverture.html %}"><span>Couverture</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link ramonage.html %}"><span>Ramonage</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link nettoyage-toiture.html %}"><span>Nettoyage toiture</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link reparation-cheminee.html %}"><span>Réparation cheminée</span></a>
+                    <a class="nav-link Navbar_nav-link" href="{% link travaux-maconnerie-generale.html %}"><span>Travaux de maçonnerie générale</span></a>
+                </div>
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <!-- <a class="nav-link Navbar_nav-link" href="">Nos services</a> -->
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-link" href="{% link galerie.html %}">Nos Réalisations</a>
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-link" href="{% link contact.html %}">Contact</a>
+            </li>
+            <li class="nav-item Navbar_nav-item">
+                <a class="nav-link Navbar_nav-btn" href="{% link devis.html %}">Devis gratuit</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <script>
+      let nav = document.querySelector(".Navbar");
+window.addEventListener("scroll", fixNav);
+
+function fixNav() {
+  if (window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add("navbar-active");
+  } else {
+    nav.classList.remove("navbar-active");
+  }
+}
+  </script>

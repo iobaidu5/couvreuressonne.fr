@@ -1,0 +1,254 @@
+---
+layout: default
+permalink: /ramonage
+---
+
+<section class="ramonage">
+    <div class="ramonage_content">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="ramonage_content-head"><strong>Votre cheminée a besoin<br> d'un ramonage ? Contactez-nous
+                            !</strong></h1>
+                </div>
+                <div class="col-sm-6">
+                    <div class="ramonage_form">
+                        <div class="ramonage_form-header">
+                            <h2 class="ramonage_form-header--title">
+                                Demandez votre devis
+                            </h2>
+                        </div>
+                        <form class="ramonage_form-form" id="contactForm" method="post"
+                            action="{{ site.data.company.url.notify }}">
+                            <input type="hidden" name="lang" value="fr">
+                            <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                            <input type="hidden" name="type" value="contact" />
+                            <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                            <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                            <input type="hidden" name="firstName" value="" />
+                            <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="home_form-input" id="name" name="name"
+                                                    placeholder="Nom">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="home_form-input" id="phone" name="phone"
+                                                    placeholder="Téléphone">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="home_form-input" id="email" name="email"
+                                                    placeholder="E-mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="select" id="select" class="home_form-input">
+                                                    <option selected>Couverture</option>
+                                                    <option>Charpente</option>
+                                                    <option>Zinguerie</option>
+                                                    <option>Gouttières</option>
+                                                    <option>Nettoyage &amp; traitement</option>
+                                                    <option>Traitement de charpente</option>
+                                                    <option>Traitement de bois</option>
+                                                    <option>Autres</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha"
+                                            data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                        </div>
+                                        <br />
+                                        <div id="contact-form-response"></div>
+                                        <input style="display: none" type="submit" value="Submit"
+                                            class="wpcf7-form-control wpcf7-submit" />
+                                    </div>
+                                    <div class="checkbox" style="margin-right: -7rem !important;">
+                                        <input name="condition" type="checkbox"
+                                            style="height:2rem; width:2rem; vertical-align: middle;" />
+                                        <span class="slider_form-label"
+                                            style="color: #fff !important; margin-left: 1rem; font-size: 1.2rem;">
+                                            En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                            de vos données par ce site *</span>
+                                        <i class="fa fa-info-square" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button type="submit" class="home_form-btn form-submit" value="Submit"> Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-9">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">Service de ramonage dans le 91</h2>
+                    <p class="nosservices_menu-content--p">
+                        Dans la panoplie de prestations que vous propose Besson Couverture, vous pourrez aussi retrouver
+                        des services de ramonage. Nos techniciens sont ainsi à votre disposition pour vos travaux de
+                        toitures, mais pas que. Ces techniciens sont des spécialistes des conduits d’évacuations de
+                        fumées en tout genre.
+                    </p>
+                    <p class="nosservices_menu-content--p">Des conduits de chaudière aux extracteurs, sans oublier les
+                        VMC pour ne citer que ceux-là, nous mettons des spécialistes accrédités à votre disposition. Ces
+                        techniciens possèdent les équipements, le savoir-faire et le professionnalisme requis pour
+                        garantir la réalisation de ces prestations selon le standard de qualité de notre société.
+                        Contactez nos professionnels pour les prestations de ramonage dans le 91.</p>
+                    <div class="ramonage_box">
+                        <p class="nosservices_menu-content--p">
+                            Pour toutes informations supplémentaire, n'hésitez pas à nous contacter, nous serons ravis
+                            de vous accueillir.
+                        </p>
+                        <div class="d-flex justify-content-center mt-5">
+                            <a href="{% link contact.html %}"
+                                class="text-center home_form-btn btnchange">Contactez-nous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="agency_image">
+                    <img src="../assets/img/ramonage4.jpg" class="agency_image-img imgchange"
+                        alt="Service de ramonage dans le 91" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-12">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">Le ramonage de conduits en tout genre</h2>
+                    <p class="nosservices_menu-content--p">
+                        Les conduits d’évacuations comme les cheminées sont utilisés pour permettre de se débarrasser
+                        des fumées, vapeurs et autres éléments nocifs et portant atteinte à la sécurité des occupants.
+                        Au début les cheminées étaient utilisées essentiellement pour se débarrasser des fumées de bois
+                        dans des habitations. Si le principe reste le même aujourd’hui, les conduits ont dû s’adapter
+                        aux chaudières et aux réglementations en vigueur. Cependant, à la grande différence, aujourd’hui
+                        le ramonage concerne aussi bien les cheminées et les conduits d’évacuations de chauffage (gaz,
+                        bois ou fioul par exemple) que les VMC et les extracteurs de cuisines chargées d’évacuer les
+                        buées grasses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">L’importance du ramonage</h2>
+                    <p class="nosservices_menu-content--p">
+                        Le ramonage est important pour l’hygiène d’une habitation ou d’un bâtiment. Cependant, celle-ci
+                        va plus loin. Elle va permettre ainsi de garantir une meilleure durée de vie de vos équipements.
+                        La suie ou les autres dépôts comme la cendre sont inévitables. Toutefois, ils peuvent réduire
+                        l’efficacité de votre système et en réduire le tirage par exemple. Il ne faut pas oublier la
+                        santé des occupants du logement ; en effectuant un ramonage régulier, on réduit aussi les
+                        risques d’accidents et d’intoxications notamment au monoxyde de carbone.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="agency_image">
+                    <img src="../assets/img/ramonage2.jpg" class="agency_image-img newimg"
+                        alt="Service de ramonage dans le 91" />
+                </div>
+            </div>
+            <div class="col-sm-6 mr-0 pr-0">
+                <div class="agency_image">
+                    <img src="../assets/img/ramonage3.jpg" class="agency_image-img newimg"
+                        alt="Service de ramonage dans le 91" />
+                </div>
+            </div>
+            <div class="col-sm-6 bgchnage">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">Le ramonage pour votre assurance</h2>
+                    <p class="nosservices_menu-content--p">
+                        Le ramonage doit impérativement être réalisé par des techniciens qualifiés. Il s’agit d’une part
+                        d’une question de régulation et de l’autre d’une mesure de sécurité pour le client. En effet,
+                        après le ramonage, les professionnels remettront au client un certificat de ramonage attestant
+                        que l’opération s’est bien déroulée et que les conduits sont en bon état. Ce certificat, à
+                        l’instar de celui des entretiens de chaudières, sera sans aucun doute demandé par l’assurance en
+                        cas d’incendie par exemple.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center ramonage_box2">
+            <div class="col-sm-6">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">Des professionnels à votre disposition pour le ramonage
+                        et votre sécurité</h2>
+                    <p class="nosservices_menu-content--p">
+                        Besson Couverture vous propose ses services pour toutes vos interventions en matière de
+                        ramonage. Nos techniciens vous garantissent une remise en condition de vos conduits (pour
+                        chaudière, extracteurs ou VMC). Notre société s’assure ainsi de la conformité de vos conduits
+                        pour que vous puissiez profiter de leur efficacité et de leur fonctionnement optimal. Nous
+                        prévenons par la même occasion tous les dangers et risques connus liés aux conduits et
+                        cheminées.
+                    </p>
+                    <p class="nosservices_menu-content--p">
+                        Nous intervenons principalement en Essonne, mais nous sommes aussi disponibles pour des
+                        interventions à travers la région d’Île-de-France. N’hésitez donc pas à nous contacter.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <div class="ramonage_empty"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="../assets/img/ouvrier.png" class="ramonage_image1"
+                                alt="Service de ramonage dans le 91" />
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="../assets/img/ouvrier2.jpg" class="ramonage_image2"
+                                alt="Service de ramonage dans le 91" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency pt-0">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-12">
+                <div class="agency_content">
+                    <h2 class="menu_content-title text-center">Obtenez un devis gratuit</h2>
+                    <p class="nosservices_menu-content--p">
+                        Si vous souhaitez avoir des précisions ou obtenir des renseignements sur notre société, les
+                        prestations proposées et les tarifs, contactez-nous par téléphone ou grâce au formulaire de
+                        contact. Les membres de notre équipe sont à votre disposition pour répondre à toutes vos
+                        questions.
+                    </p>
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="{% link devis.html %}"
+                            class="text-center home_form-btn btnchange">Devis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

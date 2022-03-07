@@ -1,0 +1,24 @@
+####################
+# CONFIG
+####################
+name: SSD Flexible
+
+phones: 
+  - 01 85 53 71 28
+  - 06 76 47 19 74						
+
+
+email: ent.besson@gmail.com
+
+address: 22 Rue du 11 Novembre  91700 Sainte-Geneviève-des-Bois
+
+website: 
+
+recaptcha:
+  client: 6LcEa78eAAAAAOXEqMWKm_H0s4i4EbvNGweh-wE-
+  server: 6LcEa78eAAAAAC3QBEP2fQQGWF4m4nEhMLApx0Zk
+
+lang: fr
+url:
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify' #prod
+  redirect: '/'

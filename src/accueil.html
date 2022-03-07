@@ -1,0 +1,533 @@
+---
+layout: default
+permalink: /
+title: Page d'accueil
+description: Voici la page d'accueil.
+---
+<section class="home">
+    <div class="container">
+        <div class="home_header">
+            <h1 class="home_header-title">COUVREUR ESSONNE : CRÉATEUR DE CONFORT</h1>
+        </div>
+        <div class="home_form">
+            <form class="form home_form-form" id="contactForm" method="post"
+                action="{{ site.data.company.url.notify }}">
+                <input type="hidden" name="lang" value="fr">
+                <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                <input type="hidden" name="type" value="contact" />
+                <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                <input type="hidden" name="firstName" value="" />
+                <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-3 my-2">
+                                <div class="form-group">
+                                    <label for="name" class="home_form-label">Nom</label>
+                                    <input type="text" class="home_form-input" id="name" name="name" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-2">
+                                <div class="form-group">
+                                    <label for="email" class="home_form-label">E-mail</label>
+                                    <input type="email" class="home_form-input" id="email" name="email"
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-2">
+                                <div class="form-group">
+                                    <label for="phone" class="home_form-label">Téléphone</label>
+                                    <input type="text" class="home_form-input" id="phone" name="phone"
+                                        placeholder="Téléphone">
+                                </div>
+                            </div>
+                            <div class="col-md-3 my-2">
+                                <div class="form-group">
+                                    <label for="select" class="home_form-label">Besoin</label>
+                                    <select name="select" id="select" class="home_form-input">
+                                        <option selected>Couverture</option>
+                                        <option>Charpente</option>
+                                        <option>Zinguerie</option>
+                                        <option>Gouttières</option>
+                                        <option>Nettoyage &amp; traitement</option>
+                                        <option>Traitement de charpente</option>
+                                        <option>Traitement de bois</option>
+                                        <option>Autres</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                            </div>
+                            <br />
+                            <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+                        </div>
+                        <!-- <div id="contact-form-response"></div> -->
+                        <div class="checkbox d-flex mb-5">
+                            <input name="condition" type="checkbox"
+                                style="height:2rem; width:2rem; vertical-align: middle; margin-right: 1rem;" />
+                            <span class="home_form-label" style="font-size: 1.2rem;">
+                                En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                de vos données par ce site *</span>
+                            <i class="fa fa-info-square" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="home_form-btn form-submit" value="Submit"> Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="nosservices">
+    <div class="container">
+        <div class="home_header">
+            <h2 class="home_header-title">Nos services</h2>
+        </div>
+        <div class="nosservices_tab">
+            <div class="row nosservices_row">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon violet">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">RAVALEMENT</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon orange">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">ISOLATION</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon green">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">TRAITEMENT</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon red">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">COUVERTURE</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon blue">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">RAMONAGE</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="nosservices_tab-box">
+                        <a href="" class="nosservices_tab-icon yellow">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <h3 class="nosservices_tab-title">NETTOYAGE TOITURE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nosservices_menu">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="nosservices_menu-content">
+                        <p class="nosservices_menu-content--p">
+                            Votre <strong>Couvreur Essonne</strong> est fier de proposer ses services de toiture aux
+                            particuliers et aux
+                            entreprises en Essonne. La satisfaction de nos clients est au cœur de nos activités, ainsi
+                            nous mettons à leur disposition des couvreurs bien formés, fiables et expérimentés.
+                            <br><br>
+                            Avec de nombreuses années d'expérience dans l'industrie de la toiture, <strong>Votre
+                                couvreur en
+                                Essonne possède les connaissances et l'expertise pour mener à bien tous les types de
+                                projets
+                                de toiture</strong> (même les plus complexes).
+                            <br><br>
+                            Si vous avez besoin d'installer ou de réparer votre toiture, n'hésitez pas à contacter
+                            <strong>Couvreur Essonne</strong> au <a class="phonelink"
+                                href="tel:{{site.data.company.phones[0]}}">{{site.data.company.phones[0]}}</a>. Nous
+                            fournissons
+                            des
+                            services de toiture (sur mesure) à
+                            des prix concurrentiels !
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="nosservices_menu-content">
+                        <ul class="nosservices_menu-content--ul">
+                            <strong>Nous proposons une gamme complète de services, notamment :</strong>
+                            <li class="nosservices_menu-content--li">Installation de tous types de toits (ardoise,
+                                tuiles, zinc, métal, etc.)</li>
+                            <li class="nosservices_menu-content--li">Réparations de couverture en urgence</li>
+                            <li class="nosservices_menu-content--li">Traitement de charpente</li>
+                            <li class="nosservices_menu-content--li">Ravalements et peintures.</li>
+                            <li class="nosservices_menu-content--li">Réparation de gouttières</li>
+                            <li class="nosservices_menu-content--li">Isolation de toitures</li>
+                            <li class="nosservices_menu-content--li">Démoussage, etc.</li>
+                            <li class="nosservices_menu-content--li">Installation et remplacement de fenêtres Velux</li>
+                            <li class="nosservices_menu-content--li">Installation, remplacement ou réparation de
+                                cheminée</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="drone">
+    <div class="container">
+        <div class="drone_content">
+            <div class="drone_header">
+                <h2 class="drone_header-title">Vérification de toiture par drone !</h2>
+            </div>
+            <div class="drone_icons">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="drone_icons-content text-center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments-dollar"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                class="svg-inline--fa fa-comments-dollar fa-w-18" width="64px" height="64px">
+                                <path fill="#e7cf91"
+                                    d="M416 192c0-88.37-93.12-160-208-160S0 103.63 0 192c0 34.27 14.13 65.95 37.97 91.98C24.61 314.22 2.52 338.16 2.2 338.5A7.995 7.995 0 0 0 8 352c36.58 0 66.93-12.25 88.73-24.98C128.93 342.76 167.02 352 208 352c114.88 0 208-71.63 208-160zm-224 96v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V96c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07V288c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8zm346.01 123.99C561.87 385.96 576 354.27 576 320c0-66.94-53.49-124.2-129.33-148.07.86 6.6 1.33 13.29 1.33 20.07 0 105.87-107.66 192-240 192-10.78 0-21.32-.77-31.73-1.88C207.8 439.63 281.77 480 368 480c40.98 0 79.07-9.24 111.27-24.98C501.07 467.75 531.42 480 568 480c3.2 0 6.09-1.91 7.34-4.84 1.27-2.94.66-6.34-1.55-8.67-.31-.33-22.42-24.24-35.78-54.5z"
+                                    class=""></path>
+                            </svg>
+                            <p class="drone_icons-content--p">
+                                Réduction des coûts
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="drone_icons-content text-center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hourglass-end"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                                class="svg-inline--fa fa-hourglass-end fa-w-12" width="64px" height="64px">
+                                <path fill="#e7cf91"
+                                    d="M360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64zM192 208c-57.787 0-104-66.518-104-144h208c0 77.945-46.51 144-104 144z"
+                                    class=""></path>
+                            </svg>
+                            <p class="drone_icons-content--p">
+                                Rapidité d'exécution
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="drone_icons-content text-center">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-double"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                class="svg-inline--fa fa-check-double fa-w-16" width="64px" height="64px">
+                                <path fill="#e7cf91"
+                                    d="M505 174.8l-39.6-39.6c-9.4-9.4-24.6-9.4-33.9 0L192 374.7 80.6 263.2c-9.4-9.4-24.6-9.4-33.9 0L7 302.9c-9.4 9.4-9.4 24.6 0 34L175 505c9.4 9.4 24.6 9.4 33.9 0l296-296.2c9.4-9.5 9.4-24.7.1-34zm-324.3 106c6.2 6.3 16.4 6.3 22.6 0l208-208.2c6.2-6.3 6.2-16.4 0-22.6L366.1 4.7c-6.2-6.3-16.4-6.3-22.6 0L192 156.2l-55.4-55.5c-6.2-6.3-16.4-6.3-22.6 0L68.7 146c-6.2 6.3-6.2 16.4 0 22.6l112 112.2z"
+                                    class=""></path>
+                            </svg>
+                            <p class="drone_icons-content--p">
+                                Accessibilités des zones difficiles
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h2 class="menu_content-title">Services professionnels de couverture</h2>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    <strong>En ce qui concerne nos services de toiture, nous n’utilisons que des matériaux de qualité
+                        pour garantir un travail de haut niveau. </strong>
+                    Nous avons plus de 10 ans d’expérience dans ce domaine et nous sommes capables de travailler sur
+                    n’importe quel type de toit (toit plat, toit en fibre de verre, toit en feutre, toit en ardoise,
+                    toiture en pente, toiture arrondie, etc.).
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Si vous avez une fuite dans le toit, cela ne signifie pas toujours qu'il doit être remplacé. Il peut
+                    s’agir de tuiles brisées ou manquantes, de feutres déchirés ou usés ou de toitures en fibre de verre
+                    fissurées, etc. Notre équipe viendra sur votre propriété pour examiner votre toiture, puis elle vous
+                    proposera des services d'installation ou d'entretien sur mesure tout en respectant votre budget.
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Pour avoir plus de renseignements sur nos services de couverture en Essonne, n’hésitez pas à
+                    contacter Besson Couverture au <a class="phonelink"
+                        href="tel:{{site.data.company.phones[0]}}">{{site.data.company.phones[0]}}</a>. Nous sommes
+                    toujours là
+                    pour aider nos clients en
+                    leur proposant des services et des conseils fiables.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="menu_image">
+                    <img src="../assets/img/acc1.jpg" class="menu_image-img"
+                        alt="Services professionnels de couverture" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="menu_image">
+                    <img src="../assets/img/acc2.jpg" class="menu_image-img"
+                        alt="Entretien et réparations des couvertures" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h2 class="menu_content-title">Entretien et réparations des couvertures</h2>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    <strong>Votre Couvreur en Essonne comprend l'importance d'avoir une toiture solide et efficace pour
+                        votre maison ou immeuble.</strong>
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Par conséquent, l'entreprise met à votre disposition des techniciens expérimentés qui travailleront
+                    rapidement et efficacement pour vous fournir un toit solide et durable.
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Ils inspecteront votre toiture et utiliseront des matériaux de haute qualité pour les réparations
+                    nécessaires.
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Ils garantiront que votre toit offre une protection substantielle à votre propriété dans les années
+                    à venir.
+                </p>
+                <p class="nosservices_menu-content--p">
+                    <strong>Si votre toiture a été récemment endommagée ou a été négligée pendant un certain temps,
+                        veuillez contacter votre couvreur </strong>
+                    en Essonne pour un service de toiture haut de gamme.
+                </p>
+                <div class="d-flex justify-content-center mt-5">
+                    <a href="{% link contact.html %}" class="text-center home_form-btn">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title mb-2" style="font-weight: 300 !important;">POURQUOI RÉNOVER SA TOITURE
+                        ?</h3>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    La toiture figure parmi les éléments les plus importants de votre maison. Il ne faut pas la traiter
+                    à la légère. Et même si à la construction, vous avez pris soin de choisir les bons matériaux, vous
+                    n’êtes pas à l’abri des intempéries.
+                </p>
+                <p class="nosservices_menu-content--p">
+                    Ces derniers usent au maximum la toiture puisqu’elle est la première à recevoir les bourrasques, la
+                    pluie, la neige, les grêles, etc… Les fientes d’oiseau, les mousses, les accumulations en tout genre
+                    (poussières, débris de bois, ordures…) sont aussi à l’origine de fuite et endommage votre toiture.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title mb-2" style="font-weight: 300 !important;">QUAND RÉNOVER SA TOITURE ?
+                    </h3>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    L’usure est incontournable lorsqu’il s’agit de rénovation voire de changement de toiture. Au moins,
+                    une fois par an, nous vous incitons à contrôler l’état de votre toiture. <strong>Pour plus de
+                        sécurité,
+                        notre entreprise de couvreur en Essonne vous propose ce service.</strong> Nous pouvons nous
+                    rendre à votre
+                    domicile et effectuer le contrôle nécessaire. Avec notre expérience, ils sauront à même de détecter
+                    les éventuels problèmes et d’évaluer par la même occasion le travail à effectuer, le budget à
+                    allouer, la durée des travaux.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title mb-2" style="font-weight: 300 !important;">L’USURE SUR LES TOITURES
+                    </h3>
+                </div>
+                <p class="nosservices_menu-content--p mt-5">
+                    A ce moment, vous pouvez faire appel à notre entreprise Couvreur Essonne nous nous déplaçons afin
+                    d’évaluer les dégâts de votre toiture. Notre équipe professionnelle met à votre disposition tout son
+                    savoir-faire et expertise pour répondre à vos attentes
+                </p>
+                <div class="d-flex justify-content-center mt-5 menu_button">
+                    <a href="{% link devis.html %}" class="text-center menu_button-btn">Devis en ligne</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title mb-2" style="font-weight: 300 !important;">COMMENT PROCÉDER À LA
+                        RÉNOVATION D’UNE TOITURE ?</h3>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    <strong>Lorsque vous aurez le devis et le diagnostic de notre société Besson Couverture, vous devez
+                        d’abord vous renseigner auprès de votre mairie sur les procédures à suivre. </strong>
+                    . Selon les régions, le protocole est différent : Il se peut que vous deviez vous procurer un permis
+                    de construire. Cela dépend aussi du fait que vous vous contenterez d’une rénovation partielle ou
+                    totale. Quelle que soit votre démarche, il est toujours préférable de vérifier la législation en
+                    cours. Toutefois, la loi stipule que pendant une rénovation ou un changement, vous devez également
+                    prendre en charge l’isolation thermique de votre toiture, si celle-ci n’a pas encore été effectuée.
+                    N’hésitez pas à réaliser une <a class="phonelink" href="{% link devis.html %}">demande de devis.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-4">
+                <div class="agency_image">
+                    <img src="../assets/img/france.jpg" class="agency_image-img" alt="NOS AGENCES EN ÎLE-DE-FRANCE" />
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="agency_content">
+                    <h2 class="agency_content-title">NOS AGENCES EN ÎLE-DE-FRANCE</h2>
+                    <p class="nosservices_menu-content--p">
+                        Bénéficiez du savoir-faire de nos experts où que vous soyez en Île-de-France tout en étant
+                        informés des aides financières proposées pour la rénovation de votre habitat. Contactez-nous au
+                        <a class="phonelink"
+                            href="tel: {{site.data.company.phones[0]}}">{{site.data.company.phones[0]}}</a> ou au <a
+                            class="phonelink"
+                            href="tel: {{site.data.company.phones[1]}}">{{site.data.company.phones[1]}}</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="agency">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-5">
+                <div class="agency_box">
+                    <h2 class="agency_box-title">TÉMOIGNAGES</h2>
+                    <div class="agency_box-icon">
+                        <i class="fa fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="agency_content">
+                    <div class="owl-carousel">
+                        <div class="agency_content-p">
+                            <p class="nosservices_menu-content--p">
+                                "J’étais un peu perdue lorsque j’ai découvert l’immense fuite qu’il y avait dans ma
+                                charpente. J’ai appelé Couvreur Essonne qui m’a envoyé une équipe dans la journée. Ils
+                                ont
+                                pu m’aider et m’épauler dans cette étape. Aujourd’hui j’ai un toit tout neuf et bien
+                                isolé !
+                                "
+                            </p>
+                            <p class="agency_content-name">Adrien</p>
+                        </div>
+                        <div class="agency_content-p">
+                            <p class="nosservices_menu-content--p">
+                                "J’étais un peu perdue lorsque j’ai découvert l’immense fuite qu’il y avait dans ma
+                                charpente. J’ai appelé Couvreur Essonne qui m’a envoyé une équipe dans la journée. Ils
+                                ont
+                                pu m’aider et m’épauler dans cette étape. Aujourd’hui j’ai un toit tout neuf et bien
+                                isolé !
+                                "
+                            </p>
+                            <p class="agency_content-name">Adrien</p>
+                        </div>
+                        <div class="agency_content-p">
+                            <p class="nosservices_menu-content--p">
+                                "J’étais un peu perdue lorsque j’ai découvert l’immense fuite qu’il y avait dans ma
+                                charpente. J’ai appelé Couvreur Essonne qui m’a envoyé une équipe dans la journée. Ils
+                                ont
+                                pu m’aider et m’épauler dans cette étape. Aujourd’hui j’ai un toit tout neuf et bien
+                                isolé !
+                                "
+                            </p>
+                            <p class="agency_content-name">Adrien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title text-left" style="font-weight: 300 !important;">CONSEILS</h3>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    Une meilleure isolation thermique vous permettra de faire des économies en allégeant vos factures
+                    d’électricité tout en augmentant votre confort. Un logement dont l’isolation est correctement
+                    effectuée permet de moins dépenser.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="menu_content">
+                    <h3 class="menu_content-title text-left" style="font-weight: 300 !important;">ACTUALITÉ
+                    </h3>
+                </div>
+                <p class="nosservices_menu-content--p">
+                    Les coûts énergétiques augmentant considérablement, de plus en plus de foyers font confiance à nos
+                    experts pour leurs travaux d’isolation. Alors, vous aussi, <strong>n’hésitez pas à prendre rendez-vous.</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 1,
+        navigation: true,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: false,
+        dots: false,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        navText: [
+            "<i class='fa fa-chevron-left nav'></i>",
+            "<i class='fa fa-chevron-right nav'></i>"
+        ]
+    });
+    $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [5000]);
+    });
+    $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+
+    });
+</script>

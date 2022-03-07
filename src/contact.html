@@ -1,0 +1,119 @@
+---
+layout: default
+permalink: /contact
+---
+
+<section class="banner">
+    <div class="container">
+        <div class="banner_content">
+            <h1 class="banner_content-title">Notre formulaire de contact</h1>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="container">
+        <div class="contact_header">
+            <h2 class="contact_header-title"><strong>Contactez </strong>nous !</h2>
+            <h3 class="contact_header-head">Remplissez notre formulaire en ligne</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact_content">
+                    <form class="form contact_content-form" id="contactForm" method="post"
+                        action="{{ site.data.company.url.notify }}">
+                        <input type="hidden" name="lang" value="fr">
+                        <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                        <input type="hidden" name="type" value="contact" />
+                        <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                        <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                        <input type="hidden" name="firstName" value="" />
+                        <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="contact_content-form--input" id="name" name="name"
+                                                placeholder="Nom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="contact_content-form--input" id="prenom"
+                                                name="prenom" placeholder="Prenom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="contact_content-form--input" id="phone"
+                                                name="phone" placeholder="Téléphone                                                ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="contact_content-form--input" id="email"
+                                                name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="contact_content-form--textarea" id="commentaire" rows="5"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                    </div>
+                                    <br />
+                                    <input style="display: none" type="submit" value="Submit"
+                                        class="wpcf7-wpcf7-submit" />
+                                </div>
+                                <div id="contact-form-response"></div>
+                                <div class="checkbox d-flex mb-5">
+                                    <input name="condition" type="checkbox"
+                                        style="height:2rem; width:2rem; vertical-align: middle; margin-right: 1rem;" />
+                                    <span class="contact_content-form--label" style="font-size: 1.4rem;">
+                                        En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                        de vos données par ce site *</span>
+                                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="col-md-6 contact_content-form--btn form-submit"
+                                value="Submit">ENVOYER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact_info">
+                    <span class="contact_info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                    <div class="contact_info-content">
+                        <h3 class="contact_info-content--title">Adresse</h3>
+                        <p class="contact_info-content--p">{{site.data.company.address}}</p>
+                    </div>
+                </div>
+                <div class="contact_info">
+                    <span class="contact_info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                    <div class="contact_info-content">
+                        <h3 class="contact_info-content--title">Contact</h3>
+                        <p class="contact_info-content--p"><a href="tel:{{site.data.company.phone[0]}}"
+                                class="contact_info-content--link">{{site.data.company.phones[0]}}</a></p>
+                                <p class="contact_info-content--p"><a href="tel:{{site.data.company.phone[1]}}"
+                                    class="contact_info-content--link">{{site.data.company.phones[1]}}</a></p>
+                        <p class="contact_info-content--p"><a href="mailto:{{site.data.company.email}}"
+                                class="contact_info-content--link">{{site.data.company.email}}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="contact_content-map">
+    <div style="width: 100%" class="map">
+        <iframe class="map-view" width="100%" height="400" frameborder="0" scrolling="no"
+            marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=%20BH%20Internet,%207%20Avenue%20de%20l'Orme%20%C3%80%20Martin,%2091080%20%C3%89vry-Courcouronnes,%20France+(BH%20Internet)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        </iframe>
+    </div>
+</div>
